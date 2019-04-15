@@ -33,5 +33,12 @@ app.get('/api', (req, res) => {
 	});
 });
 
+// Route to show favorite Developer on Team
+app.get('/favdev', (req, res) => {
+	res.send(
+		`<section><img src="https://avatars0.githubusercontent.com/u/18340986?s=460&v=4" alt="best dev on team"><h1>He is by far the coolest developer we got.</h1></section>`
+	);
+});
+
 // Start Server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
