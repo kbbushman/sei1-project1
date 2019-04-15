@@ -33,6 +33,11 @@ app.get('/api', (req, res) => {
 				method: 'GET',
 				path: '/favdev',
 				description: 'Describes the favorite developer on the team.'
+			},
+			{
+				method: 'GET',
+				path: '/hello',
+				description: 'A simple greeting.'
 			}
 		]
 	});
@@ -43,6 +48,11 @@ app.get('/favdev', (req, res) => {
 	res.send(
 		`<section><img src="https://avatars0.githubusercontent.com/u/18340986?s=460&v=4" alt="best dev on team"><h1>He is by far the coolest developer we got.</h1></section>`
 	);
+});
+
+// Route to say Hi
+app.get('/hello', (req, res) => {
+	res.send(`<h1>Hi, From back of the room.</h1>`);
 });
 
 // Start Server
