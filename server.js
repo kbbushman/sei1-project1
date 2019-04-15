@@ -28,6 +28,11 @@ app.get('/api', (req, res) => {
 				method: 'GET',
 				path: '/api',
 				description: 'Describes all available endpoints'
+			},
+			{
+				method: 'GET',
+				path: '/favdev',
+				description: 'Describes the favorite developer on the team.'
 			}
 		]
 	});
