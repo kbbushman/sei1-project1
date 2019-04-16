@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
 	res.sendFile('views/index.html', { root: __dirname });
 });
 
+// About Route
+app.get('/about', (req, res) => {
+	res.sendFile('views/about.html', {root: __dirname});
+});
+
 // Documentation Route for API
 app.get('/api', (req, res) => {
 	res.json({
