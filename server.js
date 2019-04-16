@@ -36,7 +36,7 @@ app.get('/api', (req, res) => {
 			},
 			{
 				method: 'GET',
-				path: '/hello',
+				path: '/greeting',
 				description: 'A simple greeting.'
 			}
 		]
